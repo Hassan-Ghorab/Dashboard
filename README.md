@@ -4,7 +4,7 @@
 Dashboard Template with HTML & CSS <br />
 This is a dashboard template I made with HTML and CSS to practice my knowledge<br />
 
-# [Live Demo](https://hassan-ghorab.github.io/HTML_and_CSS_First_Template/)
+# [Live Demo](https://hassan-ghorab.github.io/Dashboard/)
 
 ### Figma Design preview:
 [Figma Desgin](https://www.figma.com/community/file/1151117358961231130)
