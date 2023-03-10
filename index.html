@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="It's a Dashboard so we can track you usage of apps and so on I hope you will like it">
+    <link rel="icon" sizes="64x64" type="image/png" href="Images/favicon.png" />
+
+    <title>Hassan Ghorab - Dashboard</title>
+    <link rel="stylesheet" href="Icons/css/fontello.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <nav class="nav flex">
+          <div class="logo-container flex">
+            <i class="icon-th menu-icon circle"></i>
+            <i class="icon-menu menu-icon circle toggle-aside"></i>
+            <h1>Constructor</h1>
+          </div>
+
+          <ul class="nav-links-list flex">
+            <li>
+              <a href="#dashboard" class="nav-link-item active">Dashboard</a>
+            </li>
+            <li><a href="#pages" class="nav-link-item">Pages</a></li>
+            <li><a href="#posts" class="nav-link-item">Posts</a></li>
+            <li><a href="#files" class="nav-link-item">Files</a></li>
+            <li><a href="#users" class="nav-link-item">Users</a></li>
+            <li>
+              <a href="#dots" class="nav-link-item"
+                ><i class="icon-dot-3 dots"></i
+              ></a>
+            </li>
+          </ul>
+
+          <form class="form-search flex">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Try searching New Pages Today"
+            />
+            <i class="icon-search search-icon"></i>
+          </form>
+
+          <div class="nav-icons flex">
+            <i class="icon-bell active bell-icon circle"></i>
+            <i class="icon-chat"></i>
+            <i class="icon-users"></i>
+            <i class="icon-chart-bar chart-icon"></i>
+          </div>
+
+          <i class="icon-user-circle user-icon circle"></i>
+        </nav>
+      </header>
+
+      <aside class="aside">
+        <div class="aside-container">
+          <ul class="nav-links-list aside-nav">
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-th-large th-large-icon link-icon"></i>
+                <a href="#dashboard" class="nav-link-item">Dashboard</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item active flex">
+              <div class="aside-content flex">
+                <i class="icon-doc-inv link-icon"></i>
+                <a href="#pages" class="nav-link-item">Pages</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-comment comment-icon link-icon"></i>
+                <a href="#posts" class="nav-link-item">Posts</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle new">NEW</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-picture picture-icon link-icon"></i>
+                <a href="#files" class="nav-link-item">Media Files</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="users-info">
+            <li class="section-header aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-users link-icon"></i>
+                <a href="#users" class="nav-link-item">Users</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-up-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-1.png" alt="user one" class="user" />
+                <p>Brett Foster</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="active"></span>
+                <p>Active</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-2.png" alt="user one" class="user" />
+                <p>Ann Ortiz</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="offline"></span>
+                <p>Offline</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-3.png" alt="user one" class="user" />
+                <p>Ollie Harmon</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="offline"></span>
+                <p>Offline</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-4.png" alt="user one" class="user" />
+                <p>Vincent Reese</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="active"></span>
+                <p>active</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-5.jpg" alt="user one" class="user" />
+                <p>Adam John</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="active"></span>
+                <p>Active</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-6.jpg" alt="user one" class="user" />
+                <p>John Ross</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="wait"></span>
+                <p>Wait</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-7.png" alt="user one" class="user" />
+                <p>Max Joe</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="wait"></span>
+                <p>Wait</p>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <img src="Images/user-8.png" alt="user one" class="user" />
+                <p>Chandler Robe</p>
+              </div>
+              <div class="aside-content flex">
+                <span class="active"></span>
+                <p>Active</p>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="nav-links-list">
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-th-list th-list-icon link-icon"></i>
+                <a href="#categories" class="nav-link-item">Categories</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-bookmark bookmark-icon link-icon"></i>
+                <a href="#tags" class="nav-link-item">Tags</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-chat chat-icon link-icon"></i>
+                <a href="#comments" class="nav-link-item">Comments</a>
+              </div>
+              <div class="aside-content flex">
+                <p class="circle">1</p>
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+            <li class="aside-nav-item flex">
+              <div class="aside-content flex">
+                <i class="icon-cog cog-icon link-icon"></i>
+                <a href="#settings" class="nav-link-item">Settings</a>
+              </div>
+              <div class="aside-content flex">
+                <i class="icon-down-open down-up-icon"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="user-status">
+        <div class="user-status-container flex">
+          <div class="user-status-container-column flex">
+            <div class="user-status-boxes-container">
+              <div class="user-status-boxes">
+                <div class="user-status-box flex pages">
+                  <div class="user-status-title flex">
+                    <h3>Pages</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body"><span>1</span> 345</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+                <div class="user-status-box flex posts">
+                  <div class="user-status-title flex">
+                    <h3>Posts</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body"><span>12</span> 456</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+                <div class="user-status-box flex users">
+                  <div class="user-status-title flex">
+                    <h3>Users</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body">21</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+                <div class="user-status-box flex files">
+                  <div class="user-status-title flex">
+                    <h3>Files</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body"><span>1</span> 220</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+                <div class="user-status-box flex categories">
+                  <div class="user-status-title flex">
+                    <h3>Categories</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body">56</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+                <div class="user-status-box flex comments">
+                  <div class="user-status-title flex">
+                    <h3>Comments</h3>
+                    <i class="icon-dot-3"></i>
+                  </div>
+                  <h3 class="user-status-body"><span>9</span> 876</h3>
+                  <div class="user-status-footer flex">
+                    <i class="icon-plus-circled circle plus-icon"></i>
+                    <button>View All</button>
+                  </div>
+                </div>
+
+                <div class="chart-info">
+                  <div class="section-header aside-nav-item flex">
+                    <div class="aside-content flex">
+                      <h2>User Start</h2>
+                    </div>
+                    <div class="aside-content flex">
+                      <div class="month">
+                        <a href="#" class="active-link">Month</a>
+                        <i class="icon-down-open link-icon"></i>
+                      </div>
+                      <a href="#" class="six-month">6 Month</a>
+                      <a href="#" class="year">Year</a>
+                    </div>
+                    <div class="aside-content flex">
+                      <i class="icon-ellipsis-vert ellipsis"></i>
+                    </div>
+                  </div>
+
+                  <div class="chart-container">
+                    <table class="chart-graph">
+                      <tbody>
+                        <tr class="qtr" id="q1">
+                          <td class="bar" style="height: 175px"></td>
+                        </tr>
+                        <tr class="qtr" id="q2">
+                          <th scope="row" class="row">9</th>
+                          <td class="bar" style="height: 135px"></td>
+                        </tr>
+                        <tr class="qtr" id="q3">
+                          <td class="bar" style="height: 115px"></td>
+                        </tr>
+                        <tr class="qtr" id="q4">
+                          <th scope="row" class="row">11</th>
+                          <td class="sent bar" style="height: 135px"></td>
+                        </tr>
+                        <tr class="qtr" id="q5">
+                          <td class="bar" style="height: 100px"></td>
+                        </tr>
+                        <tr class="qtr" id="q6">
+                          <th scope="row" class="row">13</th>
+                          <td class="bar" style="height: 70px"></td>
+                        </tr>
+                        <tr class="qtr" id="q7">
+                          <td class="bar" style="height: 115px"></td>
+                        </tr>
+                        <tr class="qtr" id="q8">
+                          <th scope="row" class="row">15</th>
+                          <td class="bar" style="height: 130px"></td>
+                        </tr>
+                        <tr class="qtr" id="q9">
+                          <td class="bar" style="height: 100px"></td>
+                        </tr>
+                        <tr class="qtr" id="q10">
+                          <th scope="row" class="row">17</th>
+                          <td class="bar" style="height: 70px"></td>
+                        </tr>
+                        <tr class="qtr" id="q11">
+                          <td class="bar" style="height: 150px"></td>
+                        </tr>
+                        <tr class="qtr" id="q12">
+                          <th scope="row" class="row">19</th>
+                          <td class="sent bar" style="height: 135px"></td>
+                        </tr>
+                        <tr class="qtr tooltip" id="q13">
+                          <td class="bar" style="height: 150px"></td>
+                        </tr>
+                        <tr class="qtr" id="q14">
+                          <th scope="row" class="row">21</th>
+                          <td class="bar" style="height: 135px"></td>
+                        </tr>
+                        <tr class="qtr" id="q15">
+                          <td class="bar" style="height: 105px"></td>
+                        </tr>
+                        <tr class="qtr" id="q16">
+                          <th scope="row" class="row">23</th>
+                          <td class="bar" style="height: 85px"></td>
+                        </tr>
+                        <tr class="qtr" id="q17">
+                          <td class="bar" style="height: 120px"></td>
+                        </tr>
+                        <tr class="qtr" id="q18">
+                          <th scope="row" class="row">25</th>
+                          <td class="bar" style="height: 130px"></td>
+                        </tr>
+                        <tr class="qtr" id="q19">
+                          <td class="bar" style="height: 85px"></td>
+                        </tr>
+                        <tr class="qtr" id="q20">
+                          <th scope="row" class="row">27</th>
+                          <td class="bar" style="height: 75px"></td>
+                        </tr>
+                        <tr class="qtr" id="q21">
+                          <td class="bar" style="height: 70px"></td>
+                        </tr>
+                        <tr class="qtr" id="q22">
+                          <th scope="row" class="row">29</th>
+                          <td class="bar" style="height: 120px"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div id="ticks">
+                      <div class="tick" style="height: 35px"><p>600</p></div>
+                      <div class="tick" style="height: 35px"><p>500</p></div>
+                      <div class="tick" style="height: 35px"><p>400</p></div>
+                      <div class="tick" style="height: 35px"><p>300</p></div>
+                      <div class="tick" style="height: 35px"><p>200</p></div>
+                      <div class="tick" style="height: 35px"><p>100</p></div>
+                      <div class="tick"><p>0</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="latest-events">
+              <div class="section-header aside-nav-item flex">
+                <div class="aside-content flex">
+                  <h2>Latest Events</h2>
+                </div>
+                <div class="aside-content flex">
+                  <div class="month">
+                    <a href="#" class="active-link">Month</a>
+                    <i class="icon-down-open"></i>
+                  </div>
+                </div>
+                <div class="aside-content flex">
+                  <i class="icon-ellipsis-vert ellipsis"></i>
+                </div>
+              </div>
+
+              <div class="latest-container">
+                <div class="latest-box flex">
+                  <div class="latest-icon">
+                    <i class="icon-doc-inv latest-events-icon-1"></i>
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="latest-content">
+                    <div class="buttons">
+                      <button class="btn">11:32</button>
+                      <button class="btn">New Page</button>
+                      <button class="btn">May Padilla</button>
+                    </div>
+                    <p>About Page Company</p>
+                  </div>
+                </div>
+                <div class="latest-box second-border flex">
+                  <div class="latest-icon">
+                    <i class="icon-chat latest-events-icon-2"></i>
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="latest-content">
+                    <div class="buttons">
+                      <button class="btn">11:32</button>
+                      <button class="btn">New Page</button>
+                      <button class="btn">May Padilla</button>
+                    </div>
+                    <p class="big-p">
+                      You might remember the Dell computer commercials in which
+                      a youth reports this exciting news to his friends that
+                      they are about to get their new computer …
+                    </p>
+                  </div>
+                </div>
+                <div class="latest-box flex">
+                  <div class="latest-icon">
+                    <i class="icon-th-list latest-events-icon-3"></i>
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="latest-content">
+                    <div class="buttons">
+                      <button class="btn">11:32</button>
+                      <button class="btn">New Page</button>
+                      <button class="btn">May Padilla</button>
+                    </div>
+                    <p>Category «Templates»</p>
+                  </div>
+                </div>
+                <div class="latest-box flex">
+                  <div class="latest-icon">
+                    <i class="icon-users latest-events-icon-4"></i>
+                    <div class="vertical-line"></div>
+                  </div>
+                  <div class="latest-content">
+                    <div class="buttons">
+                      <button class="btn">11:32</button>
+                      <button class="btn">New Page</button>
+                      <button class="btn">May Padilla</button>
+                    </div>
+                    <p>New User Alberta Colon</p>
+                  </div>
+                </div>
+                <div class="latest-box flex">
+                  <div class="latest-icon">
+                    <i class="icon-picture latest-events-icon-5"></i>
+                  </div>
+                  <div class="latest-content">
+                    <div class="buttons">
+                      <button class="btn">11:32</button>
+                      <button class="btn">New Page</button>
+                      <button class="btn">May Padilla</button>
+                    </div>
+                    <p>Add New Post «Second Post»</p>
+                    <p class="big-p">
+                      You might remember the Dell computer commercials in which
+                      a youth reports this exciting news to his friends...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-y-container flex">
+            <div class="chart-y">
+              <div class="chart-info">
+                <div class="chart-container">
+                  <div class="section-header aside-nav-item flex">
+                    <div class="aside-content flex">
+                      <h2>User Start</h2>
+                    </div>
+                    <div class="aside-content flex">
+                      <a href="#" class="active-link">Now</a>
+                      <a href="#" class="six-month">Today</a>
+                      <div class="month">
+                        <a href="#">Month</a>
+                        <i class="icon-down-open link-icon"></i>
+                      </div>
+                    </div>
+                    <div class="aside-content flex">
+                      <i class="icon-ellipsis-vert ellipsis"></i>
+                    </div>
+                  </div>
+
+                  <div class="percentages-container">
+                    <div class="tooltip percentage"></div>
+                    <div class="percentage percentage-280">
+                      <span class="text">Visitors</span>
+                    </div>
+                    <div class="percentage percentage-160">
+                      <span class="text">Subscriber</span>
+                    </div>
+                    <div class="percentage percentage-50">
+                      <span class="text">Contributor</span>
+                    </div>
+                    <div class="percentage percentage-20">
+                      <span class="text">Author</span>
+                    </div>
+
+                    <div class="ticks">
+                      <div class="tick"><p>10</p></div>
+                      <div class="tick"><p>20</p></div>
+                      <div class="tick"><p>30</p></div>
+                      <div class="tick"><p>40</p></div>
+                      <div class="tick"><p>60</p></div>
+                      <div class="tick"><p>80</p></div>
+                      <div class="tick"><p>100</p></div>
+                      <div class="tick"><p>110</p></div>
+                      <div class="tick"><p>120</p></div>
+                      <div class="tick"><p>130</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-info">
+              <div class="chart-container">
+                <div class="section-header aside-nav-item flex">
+                  <div class="aside-content flex">
+                    <h2>User Start</h2>
+                  </div>
+                  <div class="aside-content flex">
+                    <a href="#" class="active-link">Now</a>
+                    <a href="#" class="six-month">Today</a>
+                    <div class="month">
+                      <a href="#">Month</a>
+                      <i class="icon-down-open link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="aside-content flex">
+                    <i class="icon-ellipsis-vert ellipsis"></i>
+                  </div>
+                </div>
+
+                <div class="site-speed flex">
+                  <div class="circle flex">
+                    <h2 class="number">
+                      631 <br />
+                      <span>mc</span>
+                    </h2>
+                  </div>
+                  <div class="speed-boxes">
+                    <div class="speed-boxes-sub flex">
+                      <div class="speed-box flex">
+                        <p class="number">75</p>
+                        <p>Grade</p>
+                      </div>
+                      <div class="speed-box flex">
+                        <p class="number">1.9 <span>m.b</span></p>
+                        <p>Page Size</p>
+                      </div>
+                    </div>
+                    <div class="speed-boxes-sub flex">
+                      <div class="speed-box flex">
+                        <p class="number">631 <span>mc</span></p>
+                        <p>Load Time</p>
+                      </div>
+                      <div class="speed-box flex">
+                        <p class="number">42</p>
+                        <p>Requests</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
