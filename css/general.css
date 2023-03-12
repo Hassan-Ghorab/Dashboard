@@ -132,9 +132,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.2rem 0 !important;
-  padding: 1.8rem 2rem !important;
+  padding: 1.8rem 2rem;
+  margin: 1rem 0;
   border-bottom: 2px solid #f5f6f7;
+}
+
+.statistics {
+  padding-top: 3rem;
 }
 
 a {

@@ -192,7 +192,7 @@
 }
 
 .users-info .aside-content:last-of-type p:not(:first-child) {
-  width: 40px;
+  width: 4rem;
 }
 
 .user {
@@ -211,8 +211,8 @@
 .aside-nav-item .active,
 .offline,
 .wait {
-  height: 10px;
-  width: 10px;
+  height: 1rem;
+  width: 1rem;
   border-radius: 50%;
 }
 
@@ -271,7 +271,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #fff;
 }
 
@@ -405,7 +405,7 @@
   height: 24rem;
   padding: 0;
   background: transparent;
-  font-size: 11px;
+  font-size: 1.1rem;
 }
 
 .chart-graph tr,
@@ -514,20 +514,16 @@
 .chart-graph .bar {
   background-color: var(--light-green);
   left: 13px;
-  width: 5px;
+  width: .5rem;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   
 }
 
-#ticks {
-  position: relative;
-  z-index: 1;
-  font-size: 10px;
-  font-family: "fira-sans-2", Verdana, sans-serif;
-}
-
 #ticks .tick {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.5rem;
   position: relative;
 }
 
@@ -555,7 +551,7 @@
   left: 50%;
   transform: translate(-50%, -200%);
   background: var(--light-green);
-  border-radius: 8px;
+  border-radius: 6px;
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
@@ -582,7 +578,7 @@
 .latest-events {
   background-color: var(--bg-color);
   border-radius: 10px;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.1rem;
   width: 54rem;
 }
 
@@ -645,7 +641,7 @@
 .latest-content p {
   font-size: 1.2rem;
   font-weight: 500;
-  max-width: 350px;
+  max-width: 35rem;
   line-height: 1.5;
 }
 
@@ -687,7 +683,7 @@
 }
 
 .chart-y-container .chart-info {
-  height: 30rem;
+  height: 32rem;
 }
 
 .chart-y-container .chart-container{
@@ -698,10 +694,8 @@
   display: flex;
   background-color: white;
   flex-direction: column;
-  width: 100%;
-  max-width: 450px;
   position: relative;
-  padding: 30px;
+  padding: 3rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -710,11 +704,11 @@
   font-weight: 600;
   display: flex;
   align-items: center;
-  height: 30px;
-  width: 130px;
+  height: 3rem;
+  width: 13rem;
   background-color: white;
   position: absolute;
-  left:4rem;
+  left: 4rem;
   justify-content: flex-start;
 }
 
@@ -723,7 +717,6 @@
   font-weight: 700;
   display: block;
   text-align: center;
-  font-size: 10px;
   font-weight: 700;
   margin-bottom: 5px;
   margin-left: 130px;
@@ -779,19 +772,15 @@
 .chart-y .ticks {
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 1;
-  font-size: 10px;
-  font-family: "fira-sans-2", Verdana, sans-serif;
 }
 
 .chart-y .ticks .tick {
   position: relative;
-  left: 130px;
+  left: 13rem;
 }
 
 .chart-y .ticks .tick p {
-  width: 30px;
+  width: 3rem;
 }
 
 .chart-y .ticks .tick p {
@@ -800,7 +789,7 @@
 
 .chart-y .tooltip.percentage {
   position: relative;
-  width: 280px;
+  width: 28rem;
   height: 0;
 }
 
@@ -822,9 +811,9 @@
   content: "";
   position: absolute;
   left: 100%;
-  transform: translate(150%, -40%);
+  transform: translate(180%, -40%);
   background-color: transparent;
-  border: 7px solid;
+  border: 6px solid;
   border-top-color: var(--light-orange);
   border-left-color: transparent;
   border-bottom-color: transparent;
@@ -852,27 +841,9 @@
   width: 17rem;
   height: 17rem;
   line-height: 1.5;
-  border: 2px solid;
-  border-top-color:  var(--blue-color);
-  border-left-color: transparent;
-  border-bottom-color: var(--blue-color);
-  border-right-color: var(--blue-color);
-  position: relative;
-  transform: rotate(50deg);
-}
-
-.chart-y-container .circle::before {
-  content: "";
-  width: 16.6rem;
-  height: 16.6rem;
-  border-radius: 50%;
-  border: 2px solid;
-  border-top-color: transparent;
+  border: 2px solid var(--blue-color);
   border-left-color: rgba(51, 97, 255, 50%);
-  border-bottom-color: transparent;
-  border-right-color: transparent;
-  position: absolute;
-  
+  transform: rotate(50deg);
 }
 
 .chart-y-container .circle,
